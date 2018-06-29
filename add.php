@@ -17,6 +17,6 @@
 <br><br>
 <input type="submit" value="Add Data">
 </form>
-
+<a href="index.php" class="new">Home</a>
 </body>
 </html>

@@ -9,16 +9,16 @@
 include("confs/config.php");
 $result = mysqli_query($conn, "SELECT * FROM companies");
 ?>
-<ul>
 <?php while($row = mysqli_fetch_assoc($result)): ?>
-<li title="<?php echo $row['CompanyName'] ?>">
-<?php echo $row['CompanyType'] ?>
-<?php echo $row['Address']?>
-<?php echo $row['PhoneNo']?>
-</li>
+<?php	
+$name=$row["CompanyName"];
+$type=$row["CompanyType"];
+$address=$row["Address"];
+$ph=$row["PhoneNo"];
+echo "CompanyName-$name,CompanyType-$type,Address-$address,Phone-$ph";
+?>
+<br>
 <?php endwhile; ?>
-</ul>
 <a href="index.php" class="new">Home</a>
-
 </body>
 </html>

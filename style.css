@@ -1,0 +1,28 @@
+h1 {
+font-size: 30px;
+text-align: left;
+color: blue;
+text-align: center;
+}
+input[type="submit"]
+{
+	border:1px solid blue;
+	text-decoration:none;
+	color:red;
+
+}
+input[type="search"]
+{
+	border-color: blue;
+}
+div{
+	margin: auto;
+	background:yellow;
+	left:10px;
+	top:100px;
+	border-style:solid;
+	border-color: black;
+	border-width: 3px;
+	text-align: center;
+	overflow: auto;
+}
