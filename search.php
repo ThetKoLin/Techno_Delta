@@ -1,3 +1,17 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<body>
+	<h2>Companies List</h2>
+	<table>
+		<tr>
+			<th>CompanyName</th>
+			<th>CompanyType</th>
+			<th>Address</th>
+			<th>Phone no</th>
+		</tr>
 <?php
 include("confs/config.php");
 $name = $_POST['search'];
@@ -10,8 +24,16 @@ $name=$row["CompanyName"];
 $type=$row["CompanyType"];
 $address=$row["Address"];
 $ph=$row["PhoneNo"];
-echo "CompanyName-$name,CompanyType-$type,Address-$address,Phone-$ph";
+echo "<tr>
+		<td>$name</td>
+		<td>$type</td>
+		<td>$address</td>
+		<td>$ph</td>
+		</tr>";
 ?>
 <br>
 <?php endwhile; ?>
+</table>
 <a href="index.php" class="new">Home</a>
+</body>
+</html>

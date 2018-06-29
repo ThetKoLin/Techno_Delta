@@ -26,3 +26,22 @@ div{
 	text-align: center;
 	overflow: auto;
 }
+table{
+	border-collapse: collapse;
+	border:1px solid black;
+}
+th
+{
+padding-top:12px;
+padding-bottom: 12px;
+text-align: left;
+background-color:green;
+color: white; 
+
+}
+td ,th
+{
+	border:1px solid black;
+	padding:8px;
+	text-align: left;
+}
